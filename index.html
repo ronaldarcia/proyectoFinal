@@ -4,65 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronald Arcia</title>
+    <title>Ronald David Arcia Mata</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <a href="#inicio"><img src="./img/logo ram.png" height="60px" alt="Logo RAM"></a>     
+        <div id="menu-navegacion">
+            <a href="#inicio"><img src="./img/logo ram.png" height="60px" alt="Logo RAM"></a>
+                <button id="menu-btn">
+                    <img id="menu-icon" src="./img/openIcon.svg" height="30px" alt="Menu" />
+                </button>
             <nav>
-               <ul id="ul-header">
-                <li class="menu-item"> <a href="#inicio">Inicio</a></li>
+                <ul class="ul-header">
+                <li class="menu-item active"> <a href="#inicio">Inicio</a></li>
                 <li class="menu-item"> <a href="#contacto">Contacto</a></li>
                </ul>
             </nav>
+        </div>
+            <nav id="mobile-nav">
+                <ul class="ul-header">
+                <li class="menu-item-mobile"> <a href="#inicio">Inicio</a></li>
+                <li class="menu-item-mobile"> <a href="#contacto">Contacto</a></li>
+            </ul>
+            </nav>
     </header>
     <main>
-        <section id="inicio">
-            <figure>
-                <img src="./img/ronald_arcia.png" height="400px" alt="Foto de Ronald">
-            </figure>
-            <article>
-                <h1>Yo soy Ronald!</h1>
-                <p>
-                    Hola, soy Desarrollador FrontEnd y se crear sitios web dinámicos y responsivos usando las tecnologías HTML, CSS y JavaScript. 
-                    Me apasiona la programación, el diseño web y la optimización de la experiencia del usuario. 
-                    Tengo conocimientos sobre la metodología Scrum y habilidades blandas. 
-                    Aspiro a trabajar en equipos ágiles y colaborativos. 
-                    Estoy buscando una oportunidad para seguir aprendiendo y creciendo.
-                </p>
-            </article>
-                <div>
-                    <a class="boton" href="./img/Ronald Arcia CV 2023.pdf" target="_blank">Descargar mi CV</a>
-                </div>
-        </section>
-
-        <section id="contacto">
-            <article class="fondo">
-                <h2>Contactame!</h2>
-                <p>
-                    Soy Venezolano en Argentina, disfruto de actividades al aire libre, caminar me mantiene activo y en movimiento. Mi
-                    objetivo es hacer carrera como desarrollador en el futuro inmediato, disfrutando de las cosas buenas de la vida.
-                    Si quieres hablarme, puedes hacerlo en los enlaces a continuacion...
-                </p>
-            </article>
-           <div>
-            
-           </div>
-
-            <ul id="ul-footer">
-                <li><a href="mailto:ronald.arcia.ar@gmail.com" target="_blank"><img src="./img/mail.png" height="60px" alt="Gmail"></a></li>
-                <li><a href="https://ronaldarcia.github.io/proyectoFinal/" target="_blank"><img src="./img/github.png" height="60px" alt="Github"></a></li>
-                <li><a href="https://www.linkedin.com/in/ronaldarcia-dev" target="_blank"><img src="./img/linkedin.png" height="60px" alt="Linkeding"></a></li>
-            </ul>
-        </section>
+    <section id="inicio">
+        <figure>
+            <img src="./img/ronald_arcia.png" height="350px" alt="Foto de Ronald">
+        </figure>
+        <br>
+        <article class="introduccion">
+            <h1>Yo soy Ronald!</h1>
+            <p> Hola, soy Desarrollador FrontEnd y se crear sitios web dinámicos y responsivos usando las tecnologías HTML, CSS y JavaScript. 
+                Me apasiona la programación, el diseño web y la optimización de la experiencia del usuario. 
+                Tengo conocimientos sobre la metodología Scrum y habilidades blandas. 
+                Aspiro a trabajar en equipos ágiles y colaborativos. 
+                Estoy buscando una oportunidad para seguir aprendiendo y creciendo.
+            </p>
+            <br>
+            <br>
+            <a class="boton" href="./img/Ronald Arcia CV 2023.pdf" target="_blank">Descarga mi CV</a>
+        </article>
+    </section>
+    <section id="contacto">
+        <article class="fondo">
+            <h2>Contáctame!</h2>
+            <p>
+                Soy Venezolano en Argentina, disfruto de actividades al aire libre, caminar me mantiene activo y en movimiento. Mi
+                objetivo es hacer carrera como desarrollador en el futuro inmediato, disfrutando de las cosas buenas de la vida.
+                Acordemos una entrevista, puedes hacerlo a traves de los enlaces a continuacion...
+            </p>
+        </article>
+        <ul id="ul-footer">
+            <li><a href="mailto:ronald.arcia.ar@gmail.com" target="_blank"><img src="./img/mail.png" height="80px" alt="Gmail"></a></li>
+            <li><a href="https://github.com/ronaldarcia/" rel="noopener" target="_blank"><img src="./img/github.png" height="80px" alt="Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/ronaldarcia-dev" rel="noopener" target="_blank"><img src="./img/linkedin.png" height="80px" alt="Linkeding"></a></li>
+        </ul>
+            <p>
+                "Tienes que actuar y estar dispuesto a fracasar. Si tienes miedo a fracasar, no vas a llegar muy lejos"
+            </p>
+            <h4>-Steve Jobs-</h4>
+    </section>
+        
     </main>
         <footer>
             <aside>
-                <p>Codigo Latam</p>
+                <div>
+                    <svg id="modoOscuro" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                </div>
+                <p>©RAM2023</p>
             </aside>
         </footer>
-
 <script src="./main/script.js"></script>
 </body>
 </html>
